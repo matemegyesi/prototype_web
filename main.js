@@ -34,7 +34,18 @@ Diak.prototype.eredmenyek = function(){
     return `Legjobb: ${this.jegyek.maxKiv()} - Legrosszabb: ${this.jegyek.minKiv()}`
 }
 
+Diak.prototype.ujJegyHozzaadasa = function(jegy){
+    this.jegyek.push(jegy);
+}
+
+Diak.prototype.ujJegyekHozzaadasa = function(ujJegyek){
+    this.jegyek = this.jegyek.concat(ujJegyek);
+}
+
 const diak = new Diak("Alma", "12.A", [1,2,3,4,5])
 console.log(diak.info());
 console.log(diak.webprogAtlag());
 console.log(diak.eredmenyek());
+diak.ujJegyHozzaadasa(4);
+diak.ujJegyekHozzaadasa([1,2,3]);
+console.log("Frissített jegyek:", diak.jegyek);
