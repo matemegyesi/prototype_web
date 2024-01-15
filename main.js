@@ -11,3 +11,10 @@ Array.prototype.atlag = function(){
 Array.prototype.maxKiv = function(){
     return Math.max(...this);
 }
+
+Array.prototype.minKiv = function(){
+    return Math.min(...this);
+}
+
+const arr = [3,2,1]
+console.log(arr.minKiv());
