@@ -22,6 +22,12 @@ function Diak(nev, osztaly, jegyek){
     this.jegyek = jegyek;
 }
 
+const diak = new Diak("Feri", "12.A", [5,4])
+
 Diak.prototype.info = function(){
     return `${this.nev} ${this.osztaly}`
+}
+
+Diak.prototype.webprogAtlag = function(){
+    return this.jegyek.atlag()
 }
