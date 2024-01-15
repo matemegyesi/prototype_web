@@ -7,3 +7,7 @@ Array.prototype.atlag = function(){
     }
     return atlag / this.length
 }
+
+Array.prototype.maxKiv = function(){
+    return Math.max(...this);
+}
