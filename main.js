@@ -21,3 +21,7 @@ function Diak(nev, osztaly, jegyek){
     this.osztaly = osztaly;
     this.jegyek = jegyek;
 }
+
+Diak.prototype.info = function(){
+    return `${this.nev} ${this.osztaly}`
+}
