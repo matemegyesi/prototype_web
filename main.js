@@ -16,5 +16,8 @@ Array.prototype.minKiv = function(){
     return Math.min(...this);
 }
 
-const arr = [3,2,1]
-console.log(arr.minKiv());
+function Diak(nev, osztaly, jegyek){
+    this.nev = nev;
+    this.osztaly = osztaly;
+    this.jegyek = jegyek;
+}
