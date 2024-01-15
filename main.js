@@ -22,8 +22,6 @@ function Diak(nev, osztaly, jegyek){
     this.jegyek = jegyek;
 }
 
-const diak = new Diak("Feri", "12.A", [1,2,3,4,5])
-
 Diak.prototype.info = function(){
     return `${this.nev} ${this.osztaly}`
 }
@@ -33,5 +31,10 @@ Diak.prototype.webprogAtlag = function(){
 }
 
 Diak.prototype.eredmenyek = function(){
-    return `${this.jegyek.maxKiv()} ${this.jegyek.minKiv()}`
+    return `Legjobb: ${this.jegyek.maxKiv()} - Legrosszabb: ${this.jegyek.minKiv()}`
 }
+
+const diak = new Diak("Alma", "12.A", [1,2,3,4,5])
+console.log(diak.info());
+console.log(diak.webprogAtlag());
+console.log(diak.eredmenyek());
